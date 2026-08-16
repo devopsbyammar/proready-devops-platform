@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProdReady DevOps Platform</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0b3d91, #1e88e5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 60px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        p {
+            margin: 6px 0;
+            font-size: 15px;
+            color: #e0e0e0;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 14px;
+            background: #00c853;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>ProdReady DevOps Platform</h1>
+
+        <p>
+            Running on pod:
+            <strong>{{ hostname }}</strong>
+        </p>
+
+        <p>
+            Version:
+            <strong>{{ version }}</strong>
+        </p>
+
+        <div class="badge">● Healthy</div>
+    </div>
+</body>
+</html>
